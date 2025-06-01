@@ -20,3 +20,9 @@ PHONE_NUMBER=your_phone_number
 ```bash
 npm test
 ```
+## Запрашиваем ввод кода в терминале, надо будет ввести для авторизации который отправлен на почту
+```bash
+const code = readlineSync.question('Введите код подтверждения из письма: ');
+await codeInput.sendKeys(code);
+```
+
